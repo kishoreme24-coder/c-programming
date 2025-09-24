@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int age = 20;
+    char* eligibility;
+    eligibility = (age >= 18) ? 
+
+    printf("%s\n", eligibility); 
+
+    return 0;
+}
