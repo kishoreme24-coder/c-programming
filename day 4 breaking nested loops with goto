@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, k;
+
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            for (k = 0; k < 5; k++) {
+                printf("i: %d, j: %d, k: %d\n", i, j, k);
+                if (i == 2 && j == 3 && k == 1) {
+                    goto end_loops; // Jump to the label outside the loops
+                }
+            }
+        }
+    }
+
+end_loops: // This is the label
+    printf("Exited all loops using goto.\n");
+
+    return 0;
+}
