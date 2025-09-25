@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a 2D array (matrix) with 3 rows and 4 columns
+    int matrix[3][4] = {
+        {10, 20, 30, 40},
+        {15, 25, 35, 45},
+        {12, 22, 32, 42}
+    };
+
+    // Access and print elements of the matrix
+    printf("Elements of the matrix:\n");
+    for (int i = 0; i < 3; i++) { // Loop for rows
+        for (int j = 0; j < 4; j++) { // Loop for columns
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n"); // Newline after each row
+    }
+
+    // Modify an element
+    matrix[1][2] = 99;
+    printf("\nMatrix after modifying element at [1][2]:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
