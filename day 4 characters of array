@@ -1,0 +1,27 @@
+#include <stdio.h> // Required for printf and scanf
+
+int main() {
+    // 1. Declaring and initializing a character array with a string literal
+    char greeting[] = "Hello World"; 
+    // The size is automatically determined by the string literal, including the null terminator.
+
+    // 2. Declaring and initializing a character array with individual characters
+    char name[6] = {'J', 'o', 'h', 'n', '\0'}; 
+    // Explicitly include the null terminator for string functions to work correctly.
+
+    // 3. Declaring a character array and taking input from the user
+    char city[20]; // Declare an array to hold up to 19 characters + null terminator
+    printf("Enter your city: ");
+    scanf("%s", city); // Read a string (until whitespace) into the 'city' array
+
+    // Printing the character arrays (strings)
+    printf("Greeting: %s\n", greeting);
+    printf("Name: %s\n", name);
+    printf("City: %s\n", city);
+
+    // Accessing individual characters
+    printf("First character of greeting: %c\n", greeting[0]);
+    printf("Third character of name: %c\n", name[2]);
+
+    return 0;
+}
