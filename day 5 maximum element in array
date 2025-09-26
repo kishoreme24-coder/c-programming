@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int findMax(int arr[], int n) {
-    // Assume the first element is the largest
     int max = arr[0];
 
-    // Iterate through the array starting from the second element
+   
     for (int i = 1; i < n; i++) {
-        // If the current element is greater than the current maximum, update max
+        
         if (arr[i] > max) {
             max = arr[i];
         }
