@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i, limit, even_sum = 0, odd_sum = 0;
+
+    // Prompt the user to enter the limit
+    printf("Please Enter the Maximum Limit Value: ");
+    scanf("%d", &limit);
+
+    // Loop from 1 to the specified limit
+    for (i = 1; i <= limit; i++) {
+        // Check if the current number is even
+        if (i % 2 == 0) {
+            even_sum += i; // Add even number to even_sum
+        } else {
+            odd_sum += i;  // Add odd number to odd_sum
+        }
+    }
+
+    // Print the results
+    printf("The Sum of Even Numbers up to %d = %d\n", limit, even_sum);
+    printf("The Sum of Odd Numbers up to %d = %d\n", limit, odd_sum);
+
+    return 0; // Indicate successful program execution
+}
