@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int findMax(int arr[], int n) {
+    // Assume the first element is the largest
+    int max = arr[0];
+
+    // Iterate through the array starting from the second element
+    for (int i = 1; i < n; i++) {
+        // If the current element is greater than the current maximum, update max
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+int main() {
+    int arr[] = {5, 2, 7, 6, 9, 1};
+    int n = sizeof(arr) / sizeof(arr[0]); // Calculate the number of elements
+
+    int maximum_element = findMax(arr, n);
+    printf("The maximum element in the array is: %d\n", maximum_element);
+
+    return 0;
+}
