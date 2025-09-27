@@ -32,4 +32,4 @@ int main() {
     printf("Number of Consonants: %d\n", consonants);
 
     return 0;
-}
+}                
